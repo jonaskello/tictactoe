@@ -49,6 +49,7 @@ module Top = {
         (r1, r2, r)
       }
     };
+    
     let playTurn {state} (selection: (rowIdx, colIdx)) => {
       let {rows, player} = state;
       let (row, column) = selection;

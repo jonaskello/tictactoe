@@ -8,6 +8,7 @@ module Board = {
   let renderRow row handleSquareClick rid => {
     let (c1, c2, c3) = row;
     <div>
+      <span> { ReactRe.stringToElement("bbbaaa") } </span>
       <Square value=c1 handleClick=(fun _evt => handleSquareClick (rid, C1)) />
       <Square value=c2 handleClick=(fun _evt => handleSquareClick (rid, C2)) />
       <Square value=c3 handleClick=(fun _evt => handleSquareClick (rid, C3)) />
@@ -17,6 +18,7 @@ module Board = {
     let (r1, r2, r3) = props.rows;
     let {handleSquareClick} = props;
     <div>
+      (ReactRe.stringToElement "hej fgfdsfsd gfgssff 111")
       (renderRow r1 handleSquareClick R1)
       (renderRow r2 handleSquareClick R2)
       (renderRow r3 handleSquareClick R3)
